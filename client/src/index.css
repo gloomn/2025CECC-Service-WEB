@@ -1,0 +1,9 @@
+/* Tailwind CSS 지시어를 임포트합니다. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 앱 전체의 기본 배경색과 글꼴을 설정합니다. */
+body {
+  @apply bg-gray-100 font-sans;
+}
