@@ -41,9 +41,9 @@ const CONTAINER_APP_PATH = '/app';
 
 // --- [MODIFIED] 관리자 설정 및 JWT 비밀 키 ---
 const config = {
-  adminUser: 'comedu2025',
-  adminPass: 'Comedu2025!*!*',
-  participantPass: 'cecc2025',
+  adminUser: '관리자용 아이디 설정',
+  adminPass: '관리자용 비밀번호 설정',
+  participantPass: '참가자용 비밀번호 설정',
   // [NEW] 2. JWT 비밀 키 (실제 서비스에서는 .env 파일로 숨겨야 함)
   JWT_SECRET: process.env.JWT_SECRET || 'your-very-secret-key-for-contest-123!',
   JWT_EXPIRES_IN: '3h' // 토큰 유효 시간
@@ -557,4 +557,5 @@ async function startServer() {
 startServer().catch(err => {
   console.error('Failed to start server:', err);
   process.exit(1);
+
 });
